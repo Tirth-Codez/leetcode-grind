@@ -3,11 +3,11 @@
 # The result can be in any order.
 
 # 🧠 Approach:
-# - First, create a frequency dictionary using `.get()` to count occurrences.
-# - Convert the dictionary into a list of [frequency, number] pairs.
-# - Sort the list by frequency (ascending).
-# - Pop the last `k` elements from the list (they have highest frequency).
-# - Extract the number from each and return the result list.
+# - First, create a frequency dictionary using `.get()` to count how many times each number appears in the list.
+# - Convert this dictionary into a list of `[frequency, number]` pairs.
+# - Sort this list in descending order based on frequency so the most frequent elements come first.
+# - Pop the first `k` elements from the list (which now hold the top k frequent items).
+# - Extract only the numbers (not the frequencies) and return them in a result list.
 
 # 💬 Personal Note:
 # This code is part of my Python grind + Leetcode journey.
